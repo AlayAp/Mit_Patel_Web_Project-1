@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Real-Estate Web Project</title>
+        <link rel="stylesheet" href="/css/homepage.css" />
+        <link
+          rel="shortcut icon"
+          href="/icons/business-outline.svg"
+          type="image/svgs"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+          rel="stylesheet"
+        />
+        <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+      </head>
+      
+<body>
+    <!-- <h1>Contact</h1>
+    <a href="/index.html"><button style="background-color: red; border: none; color: white; height: 5vh; width: 8vw;">Home Page</button></a> -->
+    <nav id="navbar">
+      <div class="icon_div">
+        <img
+          class="company_icon"
+          src="/icons/business-outline.svg"
+          alt="icon"
+        />
+        <p id="paragraph">
+          ALMIRA
+          <span id="span">Properties</span>
+        </p>
+      </div>
+      <ul>
+        <a id="redHome" href="/index.html"><li>Home</li></a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            <p id="propertiesText">Properties</p>
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="/webpages/buy.html">Buy</a>
+            <a href="/webpages/rent.html">Rent</a>
+          </div>
+        </div>
+        <a href="/webpages/news.html"><li>News</li></a>
+        <a href="/webpages/team.html"><li>Team</li></a>
+        <a href="/webpages/contact.html"><li>Contact</li></a>
+      </ul>
+    </nav>
+    <nav class="mobile">
+      <div class="header_main_line">
+        <div>
+          <div class="icon_div">
+            <img class="company_icon" src="/icons/business-outline.svg" alt="icon" />
+            <p id="paragraph">
+              ALMIRA
+              <span id="span">Properties</span>
+            </p>
+          </div>
+        </div>
+        <label for="nav_trigger" class="nav_icon">
+          <span class="nav_icon_span"></span>
+          <span class="nav_icon_span"></span>
+          <span class="nav_icon_span"></span>
+        </label>
+      </div>
+      <input type="checkbox" id="nav_trigger">
+      <nav class="main_nav">
+        <label for="nav_trigger" class="nav_close_icon"> &#x2716</label>
+        <!-- <button for="nav_trigger" class="nav_close_icon">close</button> -->
+        <section class="links">
+          <ul class="footerUL">
+            <a id="redHome" href="/index.html">
+              <li>Home</li>
+            </a>
+            <a href="/webpages/buy.html">Buy</a>
+            <a href="/webpages/rent.html">Rent</a>
+            <a href="/webpages/news.html">
+              <li>News</li>
+            </a>
+            <a href="/webpages/team.html">
+              <li>Team</li>
+            </a>
+            <a href="/webpages/contact.html">
+              <li>Contact</li>
+            </a>
+          </ul>
+        </section>
+      </nav>
+    </nav>
+    <header>
+      <img
+        id="header_image"
+        src="/images/appartment_header_img.webp"
+        alt="Header_Image"
+      />
+      <h1 class="header_text">Contact Us</h1>
+      <p>EXCLUSIVLY BY ALMIRA</p>
+    </header>
+  
+
+
+
+      <div class="mainContact">
+        <h2>CONTACT US</h2>
+        <form action="/index.html" method="get" id="myform" class="form">
+            <div class="contact_line1">
+
+                <div class="fisrtname">
+                    <label for="fname">First name:</label><br>
+                    <input type="text" size="50"  id="fname" name="fname" >
+                    <!-- <span id="error_contact_name"></span> -->
+                </div>
+                <div class="lastname">
+                    
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" size="50"  id="lname" name="lname">
+                    <!-- <span id="error_contact_lastname"></span> -->
+                </div>
+            </div>
+            
+                <label for="email">Email</lable><br>
+                <input type="email" id="email" name="email">
+                <!-- <span id="error_contact_email"></span> -->
+            <br>
+            <div class="radioDesktop">
+            <label for="radio" class="radioButton">interested in:
+
+                <input type="radio" name="radio" id="buy">
+                <label for="radio">Buy</label>
+
+                <input type="radio" name="radio" id="rent">
+                <label for="radio">Rent</label>
+
+
+                <input type="radio" name="radio" id="other">
+                <label for="radio">Other</label>
+
+            </label>
+          </div>
+            <div class="radioMobile">
+            <label for="radio" class="radioButtonMobile">interested in:
+
+                <div class="radioCenter">
+                <label for="radio">Buy &nbsp;</label>
+                <input type="radio" name="radio" id="buy">
+              </div>
+                
+              <div class="radioCenter">
+                <label for="radio">Rent &nbsp;</label>
+                <input type="radio" name="radio" id="rent">
+              </div>
+                
+              <div class="radioCenter">
+                <label for="radio">Other</label>
+                <input type="radio" name="radio" id="other">
+              </div>
+            </label>
+
+          </div>
+            <br>
+            <label for="message">Message</label><br>
+                <textarea name="message" id="message" cols="25" rows="5">
+                </textarea>
+                <div id="button">
+                    <input type="submit" value="Submit" id="submit_request" class="submitButtonInForm">
+                </div>
+                </form>
+      </div>
+      <footer>
+        <div class="leftFooter">
+          <div class="icon_div_footer">
+            <img
+              class="company_icon"
+              src="/icons/business-outline.svg"
+              alt="icon"
+            />
+            <p id="paragraph">
+              ALMIRA
+              <span id="span">Properties</span>
+            </p>
+          </div>
+          <div class="copyright">copyright &copy; 2024 by ALMIRA Properties</div>
+        </div>
+        <div class="rightFooter">
+          <section class="links">
+            <ul class="footerUL">
+              <a id="redHome" href="/index.html"><li>Home</li></a>
+              <div class="footerBuy">
+                <a href="/webpages/buy.html">Buy | </a>
+                <a href="/webpages/rent.html">Rent</a>
+              </div>
+              <a href="/webpages/news.html"><li>News</li></a>
+              <a href="/webpages/team.html"><li>Team</li></a>
+              <a href="/webpages/contact.html"><li>Contact</li></a>
+            </ul>
+          </section>
+          <section class="address">
+            <pre class="footerText">
+  500 Terry Francine Street
+  San Francisco, CA 94158
+  info@mysite.com</pre
+            >
+          </section>
+        </div>
+      </footer>
+      <footer class="footerForMobile">
+        <div class="icon_div_footer">
+          <img
+            class="company_icon"
+            src="/icons/business-outline.svg"
+            alt="icon"
+          />
+          <p id="paragraph">
+            ALMIRA
+            <span id="span">Properties</span>
+          </p>
+        </div>
+        <section class="links">
+          <ul class="footerUL">
+            <a id="redHome" href="/index.html"><li>Home</li></a>
+            <div class="footerBuy">
+              <a href="/webpages/buy.html">Buy | </a>
+              <a href="/webpages/rent.html">Rent</a>
+            </div>
+            <a href="/webpages/news.html"><li>News</li></a>
+            <a href="/webpages/team.html"><li>Team</li></a>
+            <a href="/webpages/contact.html"><li>Contact</li></a>
+          </ul>
+        </section>
+        <div class="copyright">copyright &copy; 2024 by ALMIRA Properties</div>
+  
+        <section class="address">
+          <pre class="footerText">
+  500 Terry Francine Street
+  San Francisco, CA 94158
+  info@mysite.com</pre
+          >
+        </section>
+      </footer>
+<script src="/js/contact.js"></script>
+</body>
+</html>

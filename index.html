@@ -1,0 +1,635 @@
+<!-- 
+  source of images in website.
+  Appartment_Header_img== https://static.wixstatic.com/media/82fcd3_1dcc53b4e88842c7816a8251e1102530~mv2_d_4896_3264_s_4_2.jpg/v1/fill/w_3360,h_1304,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/82fcd3_1dcc53b4e88842c7816a8251e1102530~mv2_d_4896_3264_s_4_2.jpg
+house1_sale_img.jpg==https://unsplash.com/photos/white-and-brown-concrete-house-near-green-trees-under-white-sky-during-daytime-XbqRB4E-iH4
+house2_sale_img.jpg == https://unsplash.com/photos/architectural-photography-of-gray-and-blue-house-I3JPit72W_Q
+house3_sale_img.jpg== https://unsplash.com/photos/white-and-gray-wooden-house-near-green-trees-under-blue-sky-during-daytime-WhYsgTb1LMQ
+house4_sale_img.jpg== https://unsplash.com/photos/white-and-brown-wooden-house-near-bare-trees-during-daytime-nsag0sKS0aY
+house5_sale_img.jpg== https://unsplash.com/photos/brown-and-gray-concrete-house-during-daytime-wtzOhxEX4WU
+extra== https://unsplash.com/photos/trees-beside-white-concrete-building-_hw4aUQ81ic
+house6_sale_img.jpg== https://unsplash.com/photos/white-and-brown-concrete-house--iWNx4og-9Y
+house1_rent_img.jpg== https://unsplash.com/photos/brown-and-white-concrete-house-under-blue-sky-during-daytime-XGvwt544g8k
+house2_rent_img.jpg== https://unsplash.com/photos/landscape-photo-of-2-storey-house-yFV39g6AZ5o
+house3_rent_img.jpg== https://unsplash.com/photos/brown-and-white-concrete-house-near-green-trees-under-blue-sky-during-daytime-U6Q6zVDgmSs
+house4_rent_img.jpg== https://unsplash.com/photos/white-and-yellow-wooden-house-near-green-trees-during-daytime-Mq0_1GEKxUc
+house5_rent_img.jpg== https://unsplash.com/photos/white-and-brown-concrete-house-L8Rm6xCo0wE
+house6_rent_imp.jpg== https://unsplash.com/photos/a-house-with-a-driveway-X_JXnSBKOO4
+ 
+bg_sale_img.jpg== https://unsplash.com/photos/red-and-gray-house-during-day-YwVBpx4Wbag
+bg_rent_img.jpg==https://unsplash.com/photos/white-wooden-dining-table-set-during-daytime-nBuiLbz_j4A?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
+header_image3.jpg == https://unsplash.com/photos/windowpanes-at-the-building-B0aCvAVSX8E?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
+header_img4.jpg ==https://unsplash.com/photos/house-during-winter-and-day-M2qQUVOFbRY?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
+ 
+icons ==  iconic.io
+ 
+font== https://fonts.google.com/selection/embed -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Real-Estate Web Project</title>
+  <link rel="stylesheet" href="/css/homepage.css" />
+  <link rel="shortcut icon" href="icons/business-outline.svg" type="image/svgs" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="/js/autoPageRotation.js"></script>
+</head>
+
+<body>
+  <nav id="navbar">
+    <div class="icon_div">
+      <img class="company_icon" src="/icons/business-outline.svg" alt="icon" />
+      <p id="paragraph">
+        ALMIRA
+        <span id="span">Properties</span>
+      </p>
+    </div>
+    <ul>
+      <a id="redHome" href="./index.html">
+        <li>Home</li>
+      </a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          <p id="propertiesText">Properties</p>
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="./webpages/buy.html">Buy</a>
+          <a href="./webpages/rent.html">Rent</a>
+        </div>
+      </div>
+      <a href="./webpages/news.html">
+        <li>News</li>
+      </a>
+      <a href="./webpages/team.html">
+        <li>Team</li>
+      </a>
+      <a href="./webpages/contact.html">
+        <li>Contact</li>
+      </a>
+    </ul>
+  </nav>
+  <nav class="mobile">
+    <div class="header_main_line">
+      <div>
+        <div class="icon_div">
+          <img class="company_icon" src="/icons/business-outline.svg" alt="icon" />
+          <p id="paragraph">
+            ALMIRA
+            <span id="span">Properties</span>
+          </p>
+        </div>
+      </div>
+      <div>
+        <label for="nav_trigger" class="nav_icon">
+          <span class="nav_icon_span"></span>
+          <span class="nav_icon_span"></span>
+          <span class="nav_icon_span"></span>
+        </label>
+      
+      <input type="checkbox" id="nav_trigger">
+      <nav class="main_nav">
+        <label for="nav_trigger" class="nav_close_icon"> &#x2716</label>
+        <!-- <button for="nav_trigger" class="nav_close_icon">close</button> -->
+        <section class="links">
+          <ul class="footerUL">
+            <a id="redHome" href="/index.html">
+              <li>Home</li>
+            </a>
+            <a href="/webpages/buy.html">Buy</a>
+            <a href="/webpages/rent.html">Rent</a>
+            <a href="/webpages/news.html">
+              <li>News</li>
+            </a>
+            <a href="/webpages/team.html">
+              <li>Team</li>
+            </a>
+            <a href="/webpages/contact.html">
+              <li>Contact</li>
+            </a>
+          </ul>
+        </section>
+      </nav>
+    </div>
+  </nav>
+  <!-- <div class="three-line">
+        <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+      </div> -->
+  <!-- <ul>
+        <a id="redHome" href="./index.html"><li>Home</li></a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            <p id="propertiesText">Properties</p>
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="./webpages/buy.html">Buy</a>
+            <a href="./webpages/rent.html">Rent</a>
+          </div>
+        </div>
+        <a href="./webpages/news.html"><li>News</li></a>
+        <a href="./webpages/team.html"><li>Team</li></a>
+        <a href="./webpages/contact.html"><li>Contact</li></a>
+        
+      </ul> -->
+  </nav>
+  <header>
+    <img id="header_image" src="/images/appartment_header_img.webp" alt="Header_Image" />
+    <h1 class="header_text">New Properties</h1>
+    <p>EXCLUSIVLY BY ALMIRA</p>
+  </header>
+  <div class="main_content">
+    <main id="main">
+      <h2 id="question_tag">WHAT ARE YOU LOOKING FOR?</h2>
+      <!-- <div>
+        <img src="/images/bg_sale_img.jpg" alt="" />
+        <img src="/images/bg_rent_img.jpg" alt="" />
+      </div> -->
+      <p class="para">
+        "Discover your dream home with our comprehensive real estate services.
+        Whether you're looking to buy, sell, or rent, we offer a personalized
+        approach to match you with the perfect property. From luxurious
+        estates to cozy apartments, our listings cater to every lifestyle and
+        budget. Experience seamless transactions and expert guidance as we
+        help you navigate the exciting world of real estate. Your journey to
+        finding the ideal space begins here."
+      </p>
+
+      <h2 class="heading_line1">
+        NEW PROPERTIES
+        <p class="heading_line2">For Sale</p>
+      </h2>
+      <div class="section_div_sale">
+        <section>
+          <img src="/images/house1_sale_img.jpg" alt="img1" />
+          <p class="adress_line_1">17081 Perry Street</p>
+          <p class="adress_line_2">San Francisco,ON,CA</p>
+          <p class="price">$850,000</p>
+          <div class="hr"></div>
+          <div class="info_container_inSection">
+            <div>
+              <img class="icons" src="./icons/bed.png" alt="" />
+              <p class="house_info_section1">Beds</p>
+              <p class="info_inNumber">4</p>
+            </div>
+            <div>
+              <img class="icons" src="./icons/bathtub.png" alt="" />
+              <p class="house_info_section1">Baths</p>
+              <p class="info_inNumber">2</p>
+            </div>
+            <div>
+              <img class="icons" src="./icons/next-level.png" alt="" />
+              <p class="house_info_section1">Levels</p>
+              <p class="info_inNumber">3</p>
+            </div>
+            <div>
+              <img class="icons" src="./icons/measurement.png" alt="" />
+              <p class="house_info_section1">Sqft</p>
+              <p class="info_inNumber">1234</p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <img src="/images/house2_sale_img.jpg" alt="img1" />
+          <p class="adress_line_1">52591 Union Boulevard</p>
+          <p class="adress_line_2">San Francisco,ON,CA</p>
+          <p class="price">$580,000</p>
+          <div class="hr"></div>
+          <div class="info_container_inSection">
+            <div>
+              <img class="icons" src="./icons/bed.png" alt="" />
+              <p class="house_info_section1">Beds</p>
+              <p class="info_inNumber">2</p>
+            </div>
+            <div>
+              <img class="icons" src="./icons/bathtub.png" alt="" />
+              <p class="house_info_section1">Baths</p>
+              <p class="info_inNumber">1</p>
+            </div>
+            <div>
+              <img class="icons" src="./icons/next-level.png" alt="" />
+              <p class="house_info_section1">Levels</p>
+              <p class="info_inNumber">1</p>
+            </div>
+            <div>
+              <img class="icons" src="./icons/measurement.png" alt="" />
+              <p class="house_info_section1">Sqft</p>
+              <p class="info_inNumber">984</p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <img src="/images/house3_sale_img.jpg" alt="img1" />
+          <p class="adress_line_1">33234 Washington Avenue</p>
+          <p class="adress_line_2">San Francisco,ON,CA</p>
+          <p class="price">$770,000</p>
+          <div class="hr"></div>
+          <div class="info_container_inSection">
+            <div>
+              <img class="icons" src="./icons/bed.png" alt="" />
+              <p class="house_info_section1">Beds</p>
+              <p class="info_inNumber">5</p>
+            </div>
+            <div>
+              <img class="icons" src="./icons/bathtub.png" alt="" />
+              <p class="house_info_section1">Baths</p>
+              <p class="info_inNumber">3</p>
+            </div>
+            <div>
+              <img class="icons" src="./icons/next-level.png" alt="" />
+              <p class="house_info_section1">Levels</p>
+              <p class="info_inNumber">3</p>
+            </div>
+            <div>
+              <img class="icons" src="./icons/measurement.png" alt="" />
+              <p class="house_info_section1">Sqft</p>
+              <p class="info_inNumber">2334</p>
+            </div>
+          </div>
+        </section>
+        <!-- <section>
+            <img src="/images/house4_sale_img.jpg" alt="img1" />
+            <p class="adress_line_1">15066 Banks Street</p>
+            <p class="adress_line_2">San Francisco,ON,CA</p>
+            <p class="price">$700,000</p>
+            <div class="hr"></div>
+            <div class="info_container_inSection">
+              <div>
+                <img class="icons" src="./icons/bed.png" alt="" />
+                <p class="house_info_section1">Beds</p>
+                <p class="info_inNumber">3</p>
+              </div>
+              <div>
+                <img class="icons" src="./icons/bathtub.png" alt="" />
+                <p class="house_info_section1">Baths</p>
+                <p class="info_inNumber">3</p>
+              </div>
+              <div>
+                <img class="icons" src="./icons/next-level.png" alt="" />
+                <p class="house_info_section1">Levels</p>
+                <p class="info_inNumber">3</p>
+              </div>
+              <div>
+                <img class="icons" src="./icons/measurement.png" alt="" />
+                <p class="house_info_section1">Sqft</p>
+                <p class="info_inNumber">2234</p>
+              </div>
+            </div>
+          </section>
+          <section>
+            <img src="/images/house5_sale_img.jpg" alt="img1" />
+            <p class="adress_line_1">98 Navenby Crescent</p>
+            <p class="adress_line_2">San Francisco,ON,CA</p>
+            <p class="price">$550,000</p>
+            <div class="hr"></div>
+            <div class="info_container_inSection">
+              <div>
+                <img class="icons" src="./icons/bed.png" alt="" />
+                <p class="house_info_section1">Beds</p>
+                <p class="info_inNumber">5</p>
+              </div>
+              <div>
+                <img class="icons" src="./icons/bathtub.png" alt="" />
+                <p class="house_info_section1">Baths</p>
+                <p class="info_inNumber">5</p>
+              </div>
+              <div>
+                <img class="icons" src="./icons/next-level.png" alt="" />
+                <p class="house_info_section1">Levels</p>
+                <p class="info_inNumber">3</p>
+              </div>
+              <div>
+                <img class="icons" src="./icons/measurement.png" alt="" />
+                <p class="house_info_section1">Sqft</p>
+                <p class="info_inNumber">4334</p>
+              </div>
+            </div>
+          </section>
+          <section>
+            <img src="/images/house6_sale_img.jpg" alt="img1" />
+            <p class="adress_line_1">44 Bank Avenue</p>
+            <p class="adress_line_2">San Francisco,ON,CA</p>
+            <p class="price">$840,000</p>
+            <div class="hr"></div>
+            <div class="info_container_inSection">
+              <div>
+                <img class="icons" src="./icons/bed.png" alt="" />
+                <p class="house_info_section1">Beds</p>
+                <p class="info_inNumber">4</p>
+              </div>
+              <div>
+                <img class="icons" src="./icons/bathtub.png" alt="" />
+                <p class="house_info_section1">Baths</p>
+                <p class="info_inNumber">2</p>
+              </div>
+              <div>
+                <img class="icons" src="./icons/next-level.png" alt="" />
+                <p class="house_info_section1">Levels</p>
+                <p class="info_inNumber">3</p>
+              </div>
+              <div>
+                <img class="icons" src="./icons/measurement.png" alt="" />
+                <p class="house_info_section1">Sqft</p>
+                <p class="info_inNumber">1234</p>
+              </div>
+            </div>
+          </section> -->
+      </div>
+      <div class="viewMoreButton">
+        <a href="./webpages/buy.html"><button>View More</button></a>
+      </div>
+
+      <h2 class="heading_line1">
+        NEW PROPERTIES
+        <p class="heading_line2">For Rent</p>
+      </h2>
+      <div class="section_div_rent">
+        <section class="rent_home_page">
+          <img src="/images/house1_rent_img.jpg" alt="img1" />
+          <p class="adress_line_1">98 Navenby Crescent</p>
+          <p class="adress_line_2">San Francisco,ON,CA</p>
+          <p class="price">$8,400</p>
+          <div class="hr"></div>
+          <div class="info_container_inSection">
+            <div>
+              <img class="icons" src="./icons/bed.png" alt="" />
+              <p class="house_info_section1">Beds</p>
+              <p class="info_inNumber">4</p>
+            </div>
+            <div>
+              <img class="icons" src="./icons/bathtub.png" alt="" />
+              <p class="house_info_section1">Baths</p>
+              <p class="info_inNumber">2</p>
+            </div>
+            <div>
+              <img class="icons" src="./icons/next-level.png" alt="" />
+              <p class="house_info_section1">Levels</p>
+              <p class="info_inNumber">3</p>
+            </div>
+            <div>
+              <img class="icons" src="./icons/measurement.png" alt="" />
+              <p class="house_info_section1">Sqft</p>
+              <p class="info_inNumber">1234</p>
+            </div>
+          </div>
+        </section>
+        <section class="rent_home_page">
+          <img src="/images/house2_rent_img.jpg" alt="img1" />
+          <p class="adress_line_1">16698 Spring Street</p>
+          <p class="adress_line_2">San Francisco,ON,CA</p>
+          <p class="price">$2,200</p>
+          <div class="hr"></div>
+          <div class="info_container_inSection">
+            <div>
+              <img class="icons" src="./icons/bed.png" alt="" />
+              <p class="house_info_section1">Beds</p>
+              <p class="info_inNumber">4</p>
+            </div>
+            <div>
+              <img class="icons" src="./icons/bathtub.png" alt="" />
+              <p class="house_info_section1">Baths</p>
+              <p class="info_inNumber">2</p>
+            </div>
+            <div>
+              <img class="icons" src="./icons/next-level.png" alt="" />
+              <p class="house_info_section1">Levels</p>
+              <p class="info_inNumber">3</p>
+            </div>
+            <div>
+              <img class="icons" src="./icons/measurement.png" alt="" />
+              <p class="house_info_section1">Sqft</p>
+              <p class="info_inNumber">1234</p>
+            </div>
+          </div>
+        </section>
+        <!-- <section>
+            <img src="/images/house3_rent_img.jpg" alt="img1" />
+            <p class="adress_line_1">15878 Mulberry Street</p>
+            <p class="adress_line_2">San Francisco,ON,CA</p>
+            <p class="price">$1,800</p>
+            <div class="hr"></div>
+            <div class="info_container_inSection">
+              <div>
+                <img class="icons" src="./icons/bed.png" alt="" />
+                <p class="house_info_section1">Beds</p>
+                <p class="info_inNumber">4</p>
+              </div>
+              <div>
+                <img class="icons" src="./icons/bathtub.png" alt="" />
+                <p class="house_info_section1">Baths</p>
+                <p class="info_inNumber">2</p>
+              </div>
+              <div>
+                <img class="icons" src="./icons/next-level.png" alt="" />
+                <p class="house_info_section1">Levels</p>
+                <p class="info_inNumber">3</p>
+              </div>
+              <div>
+                <img class="icons" src="./icons/measurement.png" alt="" />
+                <p class="house_info_section1">Sqft</p>
+                <p class="info_inNumber">1234</p>
+              </div>
+            </div>
+          </section> -->
+        <!-- <section>
+            <img src="/images/house4_rent_img.jpg" alt="img1" />
+            <h6 class="adress_line_1">22043 Columbus Avenue</h6>
+            <p class="adress_line_2">San Francisco,ON,CA</p>
+            <p class="price">$1,200</p>
+            <div class="hr"></div>
+            <div class="info_container_inSection">
+              <div>
+                <img class="icons" src="./icons/bed.png" alt="" />
+                <p class="house_info_section1">Beds</p>
+                <p class="info_inNumber">4</p>
+              </div>
+              <div>
+                <img class="icons" src="./icons/bathtub.png" alt="" />
+                <p class="house_info_section1">Baths</p>
+                <p class="info_inNumber">2</p>
+              </div>
+              <div>
+                <img class="icons" src="./icons/next-level.png" alt="" />
+                <p class="house_info_section1">Levels</p>
+                <p class="info_inNumber">3</p>
+              </div>
+              <div>
+                <img class="icons" src="./icons/measurement.png" alt="" />
+                <p class="house_info_section1">Sqft</p>
+                <p class="info_inNumber">1234</p>
+              </div>
+            </div>
+          </section>
+          <section>
+            <img src="/images/house5_rent_img.jpg" alt="img1" />
+            <h6 class="adress_line_1">11251 Terry Street</h6>
+            <p class="adress_line_2">San Francisco,ON,CA</p>
+            <p class="price">$1,500</p>
+            <div class="hr"></div>
+            <div class="info_container_inSection">
+              <div>
+                <img class="icons" src="./icons/bed.png" alt="" />
+                <p class="house_info_section1">Beds</p>
+                <p class="info_inNumber">3</p>
+              </div>
+              <div>
+                <img class="icons" src="./icons/bathtub.png" alt="" />
+                <p class="house_info_section1">Baths</p>
+                <p class="info_inNumber">2</p>
+              </div>
+              <div>
+                <img class="icons" src="./icons/next-level.png" alt="" />
+                <p class="house_info_section1">Levels</p>
+                <p class="info_inNumber">3</p>
+              </div>
+              <div>
+                <img class="icons" src="./icons/measurement.png" alt="" />
+                <p class="house_info_section1">Sqft</p>
+                <p class="info_inNumber">1234</p>
+              </div>
+            </div>
+          </section>
+          <section>
+            <img src="/images/house6_rent_img.jpg" alt="img1" />
+            <h6 class="adress_line_1">17081 Perry Street</h6>
+            <p class="adress_line_2">San Francisco,ON,CA</p>
+            <p class="price">$850,000</p>
+            <div class="hr"></div>
+            <div class="info_container_inSection">
+              <div>
+                <img class="icons" src="./icons/bed.png" alt="" />
+                <p class="house_info_section1">Beds</p>
+                <p class="info_inNumber">4</p>
+              </div>
+              <div>
+                <img class="icons" src="./icons/bathtub.png" alt="" />
+                <p class="house_info_section1">Baths</p>
+                <p class="info_inNumber">2</p>
+              </div>
+              <div>
+                <img class="icons" src="./icons/next-level.png" alt="" />
+                <p class="house_info_section1">Levels</p>
+                <p class="info_inNumber">3</p>
+              </div>
+              <div>
+                <img class="icons" src="./icons/measurement.png" alt="" />
+                <p class="house_info_section1">Sqft</p>
+                <p class="info_inNumber">1234</p>
+              </div>
+            </div>
+          </section> -->
+      </div>
+      <div class="viewMoreButton">
+        <a href="./webpages/rent.html"><button>View More</button></a>
+      </div>
+    </main>
+  </div>
+  <br />
+  <div class="three">
+    <p class="footer_heading">YOUR DREAM HOUSE IS ONE STEP AWAY</p>
+    <div class="footer_container">
+      <div class="footer_div">
+        <img class="footer_img" src="/icons/call-outline.svg" alt="" />
+        <p>Call Us</p>
+        <p>24*7 Available</p>
+        <a href="tel:+1 800-001-5555" style="color: black">+1 800-001-5555</a>
+      </div>
+      <div class="footer_div">
+        <img class="footer_img" src="/icons/mail-open-outline.svg" alt="" />
+        <p>MailUs Us</p>
+        <p>Direct Email</p>
+        <a href="mailto:abc@gmail.com" style="color: black">abc@gmail.com</a>
+      </div>
+      <div class="footer_div">
+        <img class="footer_img" src="/icons/location-outline.svg" alt="" />
+        <p>Find Us</p>
+        <p>24*7 Available</p>
+        <p>Address</p>
+      </div>
+    </div>
+  </div>
+  <br />
+  <footer>
+    <div class="leftFooter">
+      <div class="icon_div_footer">
+        <img class="company_icon" src="/icons/business-outline.svg" alt="icon" />
+        <p id="paragraph">
+          ALMIRA
+          <span id="span">Properties</span>
+        </p>
+      </div>
+      <div class="copyright">copyright &copy; 2024 by ALMIRA Properties</div>
+    </div>
+    <div class="rightFooter">
+      <section class="links">
+        <ul class="footerUL">
+          <a id="redHome" href="/index.html">
+            <li>Home</li>
+          </a>
+          <div class="footerBuy">
+            <a href="/webpages/buy.html">Buy | </a>
+            <a href="/webpages/rent.html">Rent</a>
+          </div>
+          <a href="/webpages/news.html">
+            <li>News</li>
+          </a>
+          <a href="/webpages/team.html">
+            <li>Team</li>
+          </a>
+          <a href="/webpages/contact.html">
+            <li>Contact</li>
+          </a>
+        </ul>
+      </section>
+      <section class="address">
+        <pre class="footerText">
+500 Terry Francine Street
+San Francisco, CA 94158
+info@mysite.com</pre>
+      </section>
+    </div>
+  </footer>
+  <footer class="footerForMobile">
+    <div class="icon_div_footer">
+      <img class="company_icon" src="/icons/business-outline.svg" alt="icon" />
+      <p id="paragraph">
+        ALMIRA
+        <span id="span">Properties</span>
+      </p>
+    </div>
+    <section class="links">
+      <ul class="footerUL">
+        <a id="redHome" href="/index.html">
+          <li>Home</li>
+        </a>
+        <div class="footerBuy">
+          <a href="/webpages/buy.html">Buy | </a>
+          <a href="/webpages/rent.html">Rent</a>
+        </div>
+        <a href="/webpages/news.html">
+          <li>News</li>
+        </a>
+        <a href="/webpages/team.html">
+          <li>Team</li>
+        </a>
+        <a href="/webpages/contact.html">
+          <li>Contact</li>
+        </a>
+      </ul>
+    </section>
+    <div class="copyright">copyright &copy; 2024 by ALMIRA Properties</div>
+
+    <section class="address">
+      <pre class="footerText">
+500 Terry Francine Street
+San Francisco, CA 94158
+info@mysite.com</pre>
+    </section>
+  </footer>
+</body>
+
+</html>
